@@ -1,0 +1,36 @@
+Data used for this thesis analysis:
+
+This repository contains both R scripts and data files used for analysis.
+
+Data consists of resource abundance, abiotic factors, predation metrics and anthropogenic disturbance metrics. 
+
+Resource abundance- Density of forbs, Vegetation biomass,distance to river, Dung heap, habitat type and Tree/shrub density.
+
+Abiotic factors-NDVI, dNDVI, Rainfall, Elevation, slope, topographic wetness index and landscape curvature
+
+Predation risk- Cover for lions(%), Escape impediments, distance to drainage bed, distance to river confluence
+
+Anthropogenic disturbance-Tourism footprint, distance to road, distance to park rangerpost, Human proximity and distance to park boundary
+
+These data were used for a traditional resource selection function and integrated step-selection analysis.
+
+R Script: 
+
+1. RSF.R - Traditional resource selection function was used to answer one question:
+ i) Do eland preferentially select areas with high resources abundance or do they select areas free from natural predation across seasons?
+
+2. ISSA.R -Integrated step selection analysis was used to address two questions:
+ i) How do resource abundance, predation risk and anthropogenic disturbance influence where eland select to move ? 
+ ii) Does eland move faster or slower if they start in anthropogenic or predation risk area?  
+
+
+Data Files:
+
+1. RSF_data.csv
+- Column consists of a animal_id, date and dist_variables
+- All variables starting with dist_ are euclidian distance in kilometers
+
+2. Issf_data.csv
+- Column consists of a animal_id, step_id,case_, tod_end, start_ and end_
+- All variables starting with start_ were extracted or calculated at the start point(beggining coordinates)
+- All variables starting with end_ were extracted or calculated at the terminal coordinates(end point)
